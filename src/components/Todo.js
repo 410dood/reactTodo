@@ -9,11 +9,11 @@ class Todo extends Component {
 
 	deleteClickedTodo() {
 	  this.props.onDeleteTodo(this.props.todo);
-	};
+	}
 
   editClickedTodo() {
-    this.props.onEditTodo(this.props.todo)
-  };
+    this.props.onEditTodo(this.props.todo);
+  }
 
 	render(){
 		return(
@@ -32,4 +32,4 @@ class Todo extends Component {
 	}
 }
 
-export default Todo
+export default Todo;
