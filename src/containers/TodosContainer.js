@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
-import TodoModel from '../models/Todo'
-import Todos from '../components/Todos'
-import CreateTodoForm from '../components/CreateTodoForm'
+import React, { Component } from 'react';
+import TodoModel from '../models/Todo';
+import Todos from '../components/Todos';
+import CreateTodoForm from '../components/CreateTodoForm';
 
 class TodosContainer extends Component {
     constructor() {
