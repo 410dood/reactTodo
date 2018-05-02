@@ -7,18 +7,18 @@ class TodosContainer extends Component {
         super()
         this.state = {
             todos: []
-        }
+        };
     }
     componentDidMount() {
-        this.fetchData()
+        this.fetchData();
     }
     fetchData() {
         TodoModel.all().then((res) => {
             this.setState({
                 todos: res.data.todos,
                 todo: ''
-            })
-        })
+            });
+        });
     }
     render() {
         return (

@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 class CreateTodoForm extends Component {
     constructor() {
@@ -6,14 +6,14 @@ class CreateTodoForm extends Component {
         //sets the initial state via the constructor! that's the constructor's job :)
         this.state = {
             todo: ''
-        }
+        };
         this.onInputChange = this.onInputChange.bind(this);
         this.onFormSubmit = this.onFormSubmit.bind(this);
     }
     onInputChange(event) {
         this.setState({
             todo: event.target.value
-        })
+        });
     }
     onFormSubmit(event) {
         event.preventDefault()
@@ -21,7 +21,7 @@ class CreateTodoForm extends Component {
         this.props.createTodo(todo)
         this.setState({
             todo: ""
-        })
+        });
     }
     render() {
         return (
